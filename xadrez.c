@@ -5,7 +5,8 @@ int main () {
     int MOV_BISPO = 5;
     int MOV_TORRE = 5;
     int MOV_RAINHA = 8;
-    int MOV_CAVALO = 8;
+    int MOV_CAVALO1 = 2;
+    int MOV_CAVALO2 = 1;
     int MOV_PEAO = 2;
 
 
@@ -39,22 +40,19 @@ int contadorTorre = 1;
     printf("\n ---------------------------\n");
     printf("Movimentação do Cavalo:\n");
 
-    for (int i = 1; i <= MOV_CAVALO; i++)
+        for (int i = 1; i <= MOV_CAVALO1; i++)
     {
-        switch (i)
-        {
-        case 1:
-            printf("Preparando pulo PRA CIMAAA!\n");
-            break;
-        
-        case 8:
-            printf("POUSO!!\n");
-            break;
-        
-        default:
-            printf("Cima!\n");
-            break;
+        printf("Cima\n");
+        if (i == MOV_CAVALO1) {
+            int j = 0;       
+            do
+            {
+                printf("Direita\n");
+                j++;
+            } while (j < MOV_CAVALO2);
+            
         }
+        
     }
 
     printf("\n ---------------------------\n");
